@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "CD81515A-C745-4146-ABF0-06777078221A"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BE8C90ED-D89F-4E3D-AD49-1792FE4CCBBF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Quiz App/QuizSection.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "QuizSection"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "BE8C90ED-D89F-4E3D-AD49-1792FE4CCBBF - 5e63588912c3eb6f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of Quiz_App.QuizSection.answeredWrong : Swift.Int"
+                  moduleName = "Quiz App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/farisansari/Documents/XCode/Quiz%20App/Quiz%20App/QuizSection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "BE8C90ED-D89F-4E3D-AD49-1792FE4CCBBF - 3f9204cfaca190d9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Quiz_App.QuizSection.init() -&gt; Quiz_App.QuizSection"
+                  moduleName = "Quiz App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/farisansari/Documents/XCode/Quiz%20App/Quiz%20App/QuizSection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "2876">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3B21AC27-3021-4D07-91D3-AEA33E84BC2E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Quiz App/QuizSection.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "reduceHealth()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3B21AC27-3021-4D07-91D3-AEA33E84BC2E - f796e06f7aceeba1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Quiz_App.QuizSection.reduceHealth() -&gt; ()"
+                  moduleName = "Quiz App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/farisansari/Documents/XCode/Quiz%20App/Quiz%20App/QuizSection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "176">
+               </Location>
+               <Location
+                  uuid = "3B21AC27-3021-4D07-91D3-AEA33E84BC2E - f796e06f7aceea46"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Quiz_App.QuizSection.reduceHealth() -&gt; ()"
+                  moduleName = "Quiz App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/farisansari/Documents/XCode/Quiz%20App/Quiz%20App/QuizSection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "268">
+               </Location>
+               <Location
+                  uuid = "3B21AC27-3021-4D07-91D3-AEA33E84BC2E - f796e06f7aceea46"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Quiz_App.QuizSection.reduceHealth() -&gt; ()"
+                  moduleName = "Quiz App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/farisansari/Documents/XCode/Quiz%20App/Quiz%20App/QuizSection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "280">
+               </Location>
+               <Location
+                  uuid = "3B21AC27-3021-4D07-91D3-AEA33E84BC2E - f796e06f7aceea46"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Quiz_App.QuizSection.reduceHealth() -&gt; ()"
+                  moduleName = "Quiz App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/farisansari/Documents/XCode/Quiz%20App/Quiz%20App/QuizSection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "304">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
