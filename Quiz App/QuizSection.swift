@@ -102,12 +102,17 @@ struct QuizSection: View {
                         .tint(Color("Highlighted"))
                         .frame(width: 100)
                     
-                    Image(systemName: (health[0] ? "heart.fill" : "heart"))
-                        .foregroundColor(.red)
-                    Image(systemName: (health[1] ? "heart.fill" : "heart"))
-                        .foregroundColor(.red)
-                    Image(systemName: (health[2] ? "heart.fill" : "heart"))
-                        .foregroundColor(.red)
+//                    Image(systemName: (health[0] ? "heart.fill" : "heart"))
+//                        .foregroundColor(.red)
+//                    Image(systemName: (health[1] ? "heart.fill" : "heart"))
+//                        .foregroundColor(.red)
+//                    Image(systemName: (health[2] ? "heart.fill" : "heart"))
+//                        .foregroundColor(.red)
+                    
+                    ForEach(0 ..< health.count, id: \.self) { heart in
+                        Image(systemName: (health[heart] ? "heart.fill" : "heart"))
+                            .foregroundColor(.red)
+                    }
                     
                     Spacer()
                 }
@@ -143,58 +148,91 @@ struct QuizSection: View {
                     Spacer()
                     
                     VStack {
+//                        HStack {
+//                            Button {
+//                                answerTriggered(0)
+//                            } label: {
+//                                Text("\(questions[questionIndex].answers[0].answerPrompt)")
+//                                    .padding(10)
+//                                    .foregroundColor(.init(Color("Primary")))
+//                                    .frame(maxWidth: .infinity)
+//                                    .frame(minHeight: 100)
+//                                    .background(Color("Tertiary"))
+//                                    .cornerRadius(10)
+//                            }
+//
+//                            Button {
+//                                answerTriggered(1)
+//                            } label: {
+//                                Text("\(questions[questionIndex].answers[1].answerPrompt)")
+//                                    .padding(10)
+//                                    .foregroundColor(.init(Color("Primary")))
+//                                    .frame(maxWidth: .infinity)
+//                                    .frame(minHeight: 100)
+//                                    .background(Color("Tertiary"))
+//                                    .cornerRadius(10)
+//                            }
+//                        }
+//
+//                        HStack {
+//                            Button {
+//                                answerTriggered(2)
+//                            } label: {
+//                                Text("\(questions[questionIndex].answers[2].answerPrompt)")
+//                                    .padding(10)
+//                                    .foregroundColor(.init("Primary"))
+//                                    .frame(maxWidth: .infinity)
+//                                    .frame(minHeight: 100)
+//                                    .background(Color("Tertiary"))
+//                                    .cornerRadius(10)
+//                            }
+//
+//                            Button {
+//                                answerTriggered(3)
+//                            } label: {
+//                                Text("\(questions[questionIndex].answers[3].answerPrompt)")
+//                                    .padding(10)
+//                                    .foregroundColor(.init(Color("Primary")))
+//                                    .frame(maxWidth: .infinity)
+//                                    .frame(minHeight: 100)
+//                                    .background(Color("Tertiary"))
+//                                    .cornerRadius(10)
+//
+//                            }
+//                        }
+                        
                         HStack {
-                            Button {
-                                answerTriggered(0)
-                            } label: {
-                                Text("\(questions[questionIndex].answers[0].answerPrompt)")
-                                    .padding(10)
-                                    .foregroundColor(.init(Color("Primary")))
-                                    .frame(maxWidth: .infinity)
-                                    .frame(minHeight: 100)
-                                    .background(Color("Tertiary"))
-                                    .cornerRadius(10)
-                            }
-                            
-                            Button {
-                                answerTriggered(1)
-                            } label: {
-                                Text("\(questions[questionIndex].answers[1].answerPrompt)")
-                                    .padding(10)
-                                    .foregroundColor(.init(Color("Primary")))
-                                    .frame(maxWidth: .infinity)
-                                    .frame(minHeight: 100)
-                                    .background(Color("Tertiary"))
-                                    .cornerRadius(10)
+                            ForEach(0..<2) { answerIndex in
+                                Button {
+                                    answerTriggered(answerIndex)
+                                } label: {
+                                    Text("\(questions[questionIndex].answers[answerIndex].answerPrompt)")
+                                      .padding(10)
+                                      .foregroundColor(.init(Color("Primary")))
+                                      .frame(maxWidth: .infinity)
+                                      .frame(minHeight: 100)
+                                      .background(Color("Tertiary"))
+                                      .cornerRadius(10)
+                                }
                             }
                         }
                         
                         HStack {
-                            Button {
-                                answerTriggered(2)
-                            } label: {
-                                Text("\(questions[questionIndex].answers[2].answerPrompt)")
-                                    .padding(10)
-                                    .foregroundColor(.init("Primary"))
-                                    .frame(maxWidth: .infinity)
-                                    .frame(minHeight: 100)
-                                    .background(Color("Tertiary"))
-                                    .cornerRadius(10)
-                            }
-                            
-                            Button {
-                                answerTriggered(3)
-                            } label: {
-                                Text("\(questions[questionIndex].answers[3].answerPrompt)")
-                                    .padding(10)
-                                    .foregroundColor(.init(Color("Primary")))
-                                    .frame(maxWidth: .infinity)
-                                    .frame(minHeight: 100)
-                                    .background(Color("Tertiary"))
-                                    .cornerRadius(10)
-                                
+                            ForEach(2..<4) { answerIndex in
+                                Button {
+                                    answerTriggered(answerIndex)
+                                } label: {
+                                    Text("\(questions[questionIndex].answers[answerIndex].answerPrompt)")
+                                      .padding(10)
+                                      .foregroundColor(.init(Color("Primary")))
+                                      .frame(maxWidth: .infinity)
+                                      .frame(minHeight: 100)
+                                      .background(Color("Tertiary"))
+                                      .cornerRadius(10)
+                                }
                             }
                         }
+
                     }
                     .frame(minWidth: 250, maxWidth: 300)
                     .fixedSize(horizontal: true, vertical: false)

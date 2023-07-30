@@ -8,20 +8,15 @@
 import Foundation
 //
 
-enum correctOptionIdentifier {
-    case one, two, three, four
+struct AnswerStructure: Hashable {
+    var answerPrompt: String
+    var correct: Bool
 }
 
 
 struct QuestionStructure {
     var questionPrompt: String
-    
-    var option1: String
-    var option2: String
-    var option3: String
-    var option4: String
-    
-    var correctOption: correctOptionIdentifier
+    var answers: [AnswerStructure]
 }
 
 // Defining both the questions and answer as a structure so I can easily access them and can be scalable
